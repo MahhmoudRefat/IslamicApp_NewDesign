@@ -1,7 +1,8 @@
-package com.example.islamicapp_newdesign
+package com.example.islamicapp_newdesign.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.islamicapp_newdesign.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

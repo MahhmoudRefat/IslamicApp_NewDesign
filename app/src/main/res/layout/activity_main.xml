@@ -4,15 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    tools:context=".ui.MainActivity">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/nav_Bar"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_Bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/nav_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemRippleColor="#00000000"
+        app:itemActiveIndicatorStyle="@color/transparent"
+        android:background="@color/M.Green"
+        />
+
+<!--        app:itemIconTint="@color/home_bottom_nav_selector"-->
+<!--        app:itemTextColor="@color/home_bottom_nav_selector"-->
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
