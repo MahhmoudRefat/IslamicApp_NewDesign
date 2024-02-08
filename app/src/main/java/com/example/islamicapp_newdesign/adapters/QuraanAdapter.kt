@@ -4,8 +4,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.islamicapp_newdesign.constants.suraName
 
-class QuraanAdapter :RecyclerView.Adapter<QuraanAdapter.ViewHolder>(){
+class QuraanAdapter(var list : List<suraName>) :RecyclerView.Adapter<QuraanAdapter.ViewHolder>(){
 
 
 
